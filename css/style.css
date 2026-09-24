@@ -1,0 +1,232 @@
+html {
+    font-size: 1em;
+    font-family: "Commissioner", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    color: #222;
+}
+
+a {
+    color: saddlebrown;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 3px solid rgb(115, 83, 50);
+    background-color: white;
+}
+
+.articles li:nth-child(even) {
+    background-color: white;
+}
+
+article p::first-line {
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    color: #8b5a2b;
+}
+
+header {
+    background-color: wheat;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header .logo {
+    width: 60px;
+    height: 60px;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+article {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+footer {
+    background-color: tan;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.about {
+    background-color: #fff8dc;
+    padding: 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.articles {
+    background-color: #f5deb3;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 1.3rem;
+}
+
+main p {
+    text-align: justify;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+ol {
+    padding-left: 1.5rem;
+}
+
+ol li {
+    margin-bottom: 0.4rem;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 0.8rem;
+    color: #5c3d1e;
+}
+
+dd {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.portrait {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px gray;
+    margin: 20px 0;
+}
+
+figure {
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 400px;
+}
+
+figure img {
+    border: 3px solid wheat;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px grey;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-style: italic;
+    color: #555;
+    margin-top: 0.6rem;
+    font-size: 1rem;
+}
+
+
+
+
+blockquote cite {
+    display: block;
+    margin-top: 0.8rem;
+    font-style: normal;
+    font-weight: bold;
+    color: #5c3d1e;
+}
+
+q {
+    color: #8b5a2b;
+    font-style: italic;
+}
+
+code {
+    background: #f0e6d2;
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 0.95em;
+    color: #7a3d0e;
+}
+
+kbd {
+    background: #333;
+    color: #fff;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 0.9em;
+    border-bottom: 2px solid #000;
+}
+
+
+del {
+    color: #a00;
+    text-decoration: line-through;
+}
+
+ins {
+    color: #060;
+    text-decoration: underline;
+    background: #e6ffe6;
+}
+
+
+.toc h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.toc ol {
+    padding-left: 1.5rem;
+}
+
+#info li:last-child a::before {
+    content: "Важно! ";
+    background-color: white;
+    color: black
+}
