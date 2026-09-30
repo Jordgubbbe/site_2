@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -60,11 +60,30 @@
                 <li><a href="article4.html">Список терминов</a></li>
             </ul>
         </section>
+        <section>
+            <h2>Обратная связь</h2>
+            <form action="">
+                <label for="login">Введите логин</label><br>
+                <input type="text" placeholder="Логин" name="login" id="login" required><br>
+                <label for="password">Введите пароль</label><br>
+                <input type="password" placeholder="Пароль" name="pass" id="pass" required><br>
+                <input type="checkbox" id="agreement" required checked>
+                <label for="agreement">Согласен на обратботку персональных данных</label><br>
+                <select name="city" id="city">
+                    <option value="" selected disabled>Выберите город</option>
+                    <option value="chel">Челябинск</option>
+                    <option value="mos">Москва</option>
+                    <option value="ekat">Екатеринбург</option>
+                </select><br>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Войти">
+            </form>
+        </section>
     </main>
     <footer>
         <p>&copy; <a target="_blank" href="https://vk.ru/jordgubbe">Гардт Владислав</a>, 2026 г.</p>
-        <p>Почта: <a href="mailto:gardtvlad@gmail.com">gardtvlad@gmail.com</a></p>
-        <p>Номер телефона: <a href="tel:+79007777777">+7 (900) 777 77-77</a></p>
+        <p><i class="fa-solid fa-envelope"></i> Почта: <a href="mailto:gardtvlad@gmail.com">gardtvlad@gmail.com</a></p>
+        <p><i class="fa-solid fa-phone"></i> Номер телефона: <a href="tel:+79007777777">+7 (900) 777 77-77</a></p>
     </footer>
 </body>
 

@@ -192,29 +192,6 @@ code {
     color: #7a3d0e;
 }
 
-kbd {
-    background: #333;
-    color: #fff;
-    padding: 0.15rem 0.5rem;
-    border-radius: 4px;
-    font-family: Consolas, Monaco, monospace;
-    font-size: 0.9em;
-    border-bottom: 2px solid #000;
-}
-
-
-del {
-    color: #a00;
-    text-decoration: line-through;
-}
-
-ins {
-    color: #060;
-    text-decoration: underline;
-    background: #e6ffe6;
-}
-
-
 .toc h3 {
     margin-top: 0;
     font-size: 1.2rem;
@@ -229,4 +206,54 @@ ins {
     content: "Важно! ";
     background-color: white;
     color: black
+}
+
+h2::before {
+    content: "\F78F";
+    font-family: "bootstrap-icons";
+    margin-right: 10px;
+    color: aqua;
+}
+
+form {
+    width: 270px;
+    border-radius: 20px;
+    padding: 25px;
+    background-color: aqua;
+    margin: 20px auto;
+}
+
+input {
+    border: 1px solid darkblue;
+    background-color: lightblue;
+    padding: 5px;
+    color: darkblue;
+    border-radius: 4px;
+}
+
+input[type=sumbit] {
+    background-color: darkblue;
+    color: white;
+}
+
+input[type=sumbit] {
+    background-color: blue;
+}
+
+input[type=sumbit] {
+    accent-color: red;
+}
+
+textarea,
+select {
+    border: 1px solid darkblue;
+    background-color: lightblue;
+    padding: 5px;
+    color: darkblue;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.about p {
+    color: #5c3d1e;
 }
