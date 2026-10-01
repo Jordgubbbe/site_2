@@ -1,6 +1,10 @@
 html {
     font-size: 1em;
-    font-family: "Commissioner", sans-serif;
+    font-family: "Lora", Georgia, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Commissioner", Arial, sans-serif;
 }
 
 body {
@@ -10,7 +14,7 @@ body {
 }
 
 a {
-    color: saddlebrown;
+    color: black;
     text-decoration: none;
 }
 
@@ -19,7 +23,7 @@ a:hover {
 }
 
 a:focus {
-    outline: 3px solid rgb(115, 83, 50);
+    outline: 3px solid red;
     background-color: white;
 }
 
@@ -30,11 +34,11 @@ a:focus {
 article p::first-line {
     letter-spacing: 0.1em;
     font-weight: 500;
-    color: #8b5a2b;
+    color: rebeccapurple;
 }
 
 header {
-    background-color: wheat;
+    background-color: blueviolet;
     text-align: center;
     padding: 50px 20px;
 }
@@ -64,7 +68,7 @@ article {
 }
 
 footer {
-    background-color: tan;
+    background-color: greenyellow;
     padding: 20px;
     text-align: center;
 }
@@ -79,7 +83,7 @@ footer {
 }
 
 .articles {
-    background-color: #f5deb3;
+    background-color: aqua;
     padding: 20px;
     max-width: 900px;
     margin: 0 auto;
@@ -91,6 +95,12 @@ p {
     line-height: 1.8rem;
     margin-bottom: 1.3rem;
 }
+
+p:lang(en) {
+    font-style: italic;
+    color: blue;
+}
+
 
 main p {
     text-align: justify;
@@ -125,7 +135,7 @@ ol li {
 dt {
     font-weight: bold;
     margin-top: 0.8rem;
-    color: #5c3d1e;
+    color: black;
 }
 
 dd {
@@ -142,7 +152,6 @@ img {
 .portrait {
     width: 300px;
     border-radius: 12px;
-    box-shadow: 0 6px 25px gray;
     margin: 20px 0;
 }
 
@@ -153,7 +162,7 @@ figure {
 }
 
 figure img {
-    border: 3px solid wheat;
+    border: 3px solid green;
     border-radius: 10px;
     box-shadow: 0 4px 12px grey;
     display: block;
@@ -175,22 +184,14 @@ blockquote cite {
     margin-top: 0.8rem;
     font-style: normal;
     font-weight: bold;
-    color: #5c3d1e;
+    color: black;
 }
 
 q {
-    color: #8b5a2b;
+    color: brown;
     font-style: italic;
 }
 
-code {
-    background: #f0e6d2;
-    padding: 0.15rem 0.4rem;
-    border-radius: 4px;
-    font-family: Consolas, Monaco, monospace;
-    font-size: 0.95em;
-    color: #7a3d0e;
-}
 
 .toc h3 {
     margin-top: 0;
@@ -255,5 +256,17 @@ select {
 }
 
 .about p {
-    color: #5c3d1e;
+    color: red;
 }
+
+img + p {
+    margin-top: 30px;
+}
+
+body {} /* a=0 b=0 c=1 специфичность = 1 */
+.pink {} /* a=0 b=1 c=0 специфичность = 10 */
+#logo {} /* a=1 b=0 c=0 специфичность = 100 */
+#mainnav ul {} /* a=1 b=0 c=1 специфичность = 101 */
+#mainnav .active {} /* a=1 b=1 c=0 специфичность = 110 */
+#mainnav a:hover {} /* a=1 b=1 c=1 специфичность = 111 */
+#mainnav ul li.active {} /* a=1 b=1 c=2 специфичность = 112 */
