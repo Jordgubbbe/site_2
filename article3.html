@@ -1,48 +1,156 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт верстальщика</title>
+    <meta name="description"
+        content="Программирование и Ruby on Rails: как Дэвид Хейнемейер Ханссон создал популярный веб-фреймворк.">
+    <meta name="keywords" content="Ruby on Rails, программирование, фреймворк, Basecamp, 37signals">
+    <title>Программирование — Давид Хейнемейер Ханссон</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/ico" sizes="32x32" href="img/favicon.ico">
+    <link rel="icon" type="image/ico" sizes="16x16" href="img/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico">
 </head>
+
 <body>
     <header>
+        <img class="logo" src="img/logo.svg" alt="Логотип сайта">
         <h1>Давид Хейнемейер Ханссон</h1>
-        <img src="img/David_Heinemeier_Hansson.jpg" alt="логотип">
+        <nav>
+            <ul>
+                <li><a href="index.html#about">Введение</a></li>
+                <li><a href="index.html#info">Информация</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section class="content">
+        <article>
             <h2>Программирование</h2>
-            <p>Давид Хейнемейер Ханссон (известный в IT-сообществе как DHH) — один из самых влиятельных программистов современности. Его главное творение — веб-фреймворк Ruby on Rails — изменил подход к разработке веб-приложений по всему миру.
-
-            <h3>Создание Ruby on Rails</h3>
-            <p>В 2003 году, работая в компании 37signals над системой управления проектами Basecamp, Ханссон создал Ruby on Rails — инструментарий для быстрого построения веб-приложений на языке Ruby. Фреймворк был официально представлен в июле 2004 года и мгновенно завоевал популярность благодаря принципам «соглашение важнее конфигурации» и «не повторяйся» (DRY).
-                
-                Уже в 2005 году за создание Ruby on Rails Ханссон был назван «Хакером года» на конференции OSCON. Сегодня на Rails работают такие гиганты, как Shopify, Airbnb, GitHub, Coinbase, Square и десятки тысяч других приложений по всему миру.
+            <p>
+                Дата публикации:
+                <time datetime="2026-09-19">19 сентября 2026 г.</time>
             </p>
-            <h3>37signals и Basecamp</h3> 
-            <p>Ханссон является совладельцем компании 37signals, основанной в 1999 году вместе с Джейсоном Фридом. Компания создала революционный для своего времени продукт Basecamp — одну из первых SaaS-платформ для управления проектами. В отличие от многих технологических стартапов, 37signals с самого начала работала прибыльно, не привлекая венчурных инвестиций, и стала образцом «маленькой компании с большой прибылью».
-                
-                Помимо Basecamp, компания выпустила почтовый сервис HEY (2020), а также ряд других успешных продуктов.
-            </p> 
-                <h3>Автор бестселлеров</h3>
-            <p>Ханссон — автор четырёх книг, написанных совместно с Джейсоном Фридом. Книга «Rework» (2010) стала бестселлером по версиям New York Times, Wall Street Journal и Sunday Times — продано более миллиона экземпляров. В ней авторы делятся нестандартными подходами к построению бизнеса.
-                
-                Другие книги — «It Doesn't Have To Be Crazy At Work» (о спокойной работе без выгорания), «Remote: Office Not Required» (о преимуществах удалённой работы, вышедшая задолго до пандемии) и «Getting Real».
-            </p>
-            <h3>Инвестиции и сообщество</h3>
-                <p>С 2020 по 2023 год Ханссон инвестировал в датские стартапы, помогая строить следующее поколение сильных компаний с корнями в Дании. В 2022 году он основал The Rails Foundation — некоммерческую организацию для улучшения документации, образования и маркетинга в экосистеме Rails</p>
-            <p><a href="index.html">Главная</a></p>
-            <p><a href="article1.html">Биография</a></p>
-            <p><a href="article2.html">Гоночная карьера</a></p>
-            
-        </section>
+            <nav class="toc">
+                <h3>Содержание</h3>
+                <ol>
+                    <li><a href="#early-programming">Начало пути</a></li>
+                    <li><a href="#ruby-on-rails">Создание Ruby on Rails</a></li>
+                    <li><a href="#basecamp">Basecamp и 37signals</a></li>
+                    <li><a href="#books-opensource">Книги и open source</a></li>
+                </ol>
+            </nav>
+            <section id="early-programming">
+                <h3>Начало пути</h3>
+                <p>Программированием Ханссон начал заниматься ещё в школе. В <time datetime="1999">1999</time> году он
+                    организовал датский сайт о новостях в сфере онлайн-игр — <code>Daily Rush</code>, который
+                    поддерживал до 2001 года.</p>
+                <p>В <time datetime="2005">2005</time> году окончил Копенгагенскую школу бизнеса со степенью бакалавра в
+                    области компьютерных наук и делового администрирования.</p>
+                <p>После выпуска переехал из Копенгагена в <strong>Чикаго</strong> — туда, где находилась компания
+                    <em>37signals</em>, в которой он начал работать.
+                </p>
+            </section>
+            <section id="ruby-on-rails">
+                <h3>Создание Ruby on Rails</h3>
+                <p>
+                    Работая в <em>37signals</em> над системой управления проектами <strong>Basecamp</strong>, Ханссон
+                    разработал собственный веб-фреймворк — <strong>Ruby on Rails</strong>. Он был выпущен в <time
+                        datetime="2004-07">июле 2004</time> года как open source проект.
+                </p>
+                <p>
+                    Rails быстро стал популярным благодаря принципам <strong>«Don't Repeat Yourself» (DRY)</strong> и
+                    <strong>«Convention over Configuration» (CoC)</strong> — они позволяют писать меньше кода и быстрее
+                    разрабатывать приложения.
+                </p>
+                <p>
+                    Чтобы запустить сервер на Rails, разработчику достаточно выполнить в терминале команду:
+                </p>
+                <p>
+                    <code>rails server</code>
+                </p>
+                <p>
+                    А для остановки — нажать комбинацию клавиш <kbd>Ctrl</kbd> + <kbd>C</kbd>.
+                </p>
+                <p>За создание Ruby on Rails в <time datetime="2005">2005</time> году Ханссон был назван на конференции
+                    OSCON <strong>Hacker of the Year</strong>.
+                </p>
+                <blockquote>
+                    <p>
+                        «Rails — это не просто фреймворк. Это образ мышления».
+                    </p>
+                    <cite>— Из интервью Давида Хейнемейера Ханссона</cite>
+                </blockquote>
+                <p>
+                    Про Rails часто говорят, что это <q>фреймворк, который изменил подход к веб-разработке</q> — и это
+                    недалеко от истины.
+                </p>
+            </section>
+            <section id="basecamp">
+                <h3>Basecamp и 37signals</h3>
+                <p>
+                    Компания <em>37signals</em> была основана в <time datetime="1999">1999</time> году Джейсоном Фридом.
+                    Ханссон присоединился к ней в <time datetime="2003">2003</time> году как партнёр и ведущий
+                    разработчик.
+                </p>
+                <p>
+                    Главный продукт компании — <strong>Basecamp</strong> — система управления проектами, которая
+                    используется миллионами людей по всему миру. Именно для Basecamp Ханссон создал Ruby on Rails.
+                </p>
+                <p>
+                    В <time datetime="2014">2014</time> году 37signals была переименована в <strong>Basecamp</strong> —
+                    в честь основного продукта.
+                </p>
+                <ul>
+                    <li><strong>Basecamp</strong> — управление проектами и командная работа;</li>
+                    <li><strong>HEY</strong> — сервис электронной почты (запущен в 2020);</li>
+                    <li><strong>Once</strong> — платформа для самостоятельного размещения приложений.</li>
+                </ul>
+                <p>Ханссон и Фрид известны своим подходом к бизнесу: они не привлекали инвестиций, не наращивали штат
+                    искусственно и пропагандируют <strong>спокойный рост</strong> вместо агрессивного масштабирования.
+                </p>
+            </section>
+            <section id="books-opensource">
+                <h3>Книги и open source</h3>
+                <p>
+                    Ханссон — соавтор нескольких известных книг. Первая — «Гибкая разработка веб-приложений в среде
+                    Rails» (2005), написана вместе с Дейвом Томасом.
+                </p>
+                <p>
+                    В <time datetime="2010">2010</time> году вместе с Джейсоном Фридом он выпустил книгу
+                    <em>«Rework»</em>, а в <time datetime="2013">2013</time> — <em>«Remote: Office not required»</em> о
+                    преимуществах удалённой работы.
+                </p>
+                <p>
+                    Отдельная глава карьеры Ханссона — вклад в <em>open source</em>. Ruby on Rails был выпущен под
+                    лицензией MIT и до сих пор развивается огромным сообществом разработчиков.
+                </p>
+                <ul>
+                    <li>Ruby on Rails — веб-фреймворк;</li>
+                    <li>Instiki — вики-движок;</li>
+                    <li>Action Mailer, Active Record, Action Pack — компоненты Rails.</li>
+                </ul>
+                <p>
+                    В <time datetime="2005">2005</time> году за вклад в open source Ханссон получил премию <em>O'Reilly
+                        Open Source Award</em>.
+                </p>
+            </section>
+            <p><a href="index.html">На главную</a></p>
+        </article>
     </main>
     <footer>
-        <p>&copy; Гардт Владислав, 2026г.</div></p>
-        <p>Также меня можно найти здесь</p>
+        <p>&copy; <a target="_blank" href="https://vk.ru/jordgubbe">Гардт Владислав</a>, 2026 г.</p>
+        <p>Почта: <a href="mailto:gardtvlad@gmail.com">gardtvlad@gmail.com</a></p>
+        <p>Номер телефона: <a href="tel:+79007777777">+7 (900) 777 77-77</a></p>
     </footer>
 </body>
+
 </html>

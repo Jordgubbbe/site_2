@@ -3,7 +3,10 @@ html {
     font-family: "Lora", Georgia, serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4 {
     font-family: "Commissioner", Arial, sans-serif;
 }
 
@@ -34,7 +37,7 @@ a:focus {
 article p::first-line {
     letter-spacing: 0.1em;
     font-weight: 500;
-    color: rebeccapurple;
+    color: blueviolet;
 }
 
 header {
@@ -75,7 +78,7 @@ footer {
 
 
 .about {
-    background-color: #fff8dc;
+    background-color: grey;
     padding: 20px;
     text-align: center;
     max-width: 900px;
@@ -162,7 +165,7 @@ figure {
 }
 
 figure img {
-    border: 3px solid green;
+    border: 3px solid blueviolet;
     border-radius: 10px;
     box-shadow: 0 4px 12px grey;
     display: block;
@@ -175,9 +178,6 @@ figcaption {
     margin-top: 0.6rem;
     font-size: 1rem;
 }
-
-
-
 
 blockquote cite {
     display: block;
@@ -256,17 +256,134 @@ select {
 }
 
 .about p {
-    color: red;
+    color: black;
 }
 
-img + p {
+img+p {
     margin-top: 30px;
 }
 
-body {} /* a=0 b=0 c=1 специфичность = 1 */
-.pink {} /* a=0 b=1 c=0 специфичность = 10 */
-#logo {} /* a=1 b=0 c=0 специфичность = 100 */
-#mainnav ul {} /* a=1 b=0 c=1 специфичность = 101 */
-#mainnav .active {} /* a=1 b=1 c=0 специфичность = 110 */
-#mainnav a:hover {} /* a=1 b=1 c=1 специфичность = 111 */
-#mainnav ul li.active {} /* a=1 b=1 c=2 специфичность = 112 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Commissioner', sans-serif;
+}
+
+table caption {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr td:first-child {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+tbody tr:last-child {
+    background-color: #eaeaea;
+    border-bottom: 2px solid #333;
+}
+
+.form_item {
+    margin-bottom: 15px;
+}
+
+.form_item input[type="text"],
+.form_item select,
+.form_item textarea {
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+#contact-form {
+    background-color: #4a008a;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 350px;
+}
+
+#contact-form label {
+    color: white;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form input[type="date"],
+#contact-form select,
+#contact-form textarea {
+    height: 35px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: #eddfff;
+    font-family: inherit;
+    color: #333;
+    border-radius: 4px;
+}
+
+#contact-form textarea {
+    height: auto;
+    resize: vertical;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #c9a0dc;
+    color: #4a008a;
+    border: 2px solid #4a008a;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #4a008a;
+    color: #c9a0dc;
+    border-color: #c9a0dc;
+}
+
+#contact-form .checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#contact-form .checkbox-item input[type="checkbox"] {
+    margin: 0;
+    width: auto;
+    height: auto;
+}

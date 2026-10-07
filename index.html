@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Сайт о Дэвиде Хейнемейере Ханссоне — программисте, создателе Ruby on Rails и авторе книг.">
+    <meta name="keywords" content="Дэвид Хейнемейер Ханссон, Ruby on Rails, Basecamp, программирование, гонки">
     <title>Давид Хейнемейер Ханссон — сайт об учёном</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    </head>
+    <link rel="icon" type="image/ico" sizes="32x32" href="img/favicon.ico">
+    <link rel="icon" type="image/ico" sizes="16x16" href="img/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
 </head>
 
 <body>
@@ -23,6 +31,8 @@
                 <li><a href="#about">Введение</a>
                 </li>
                 <li><a href="#info">Информация</a>
+                </li>
+                <li><a href="#feedback">Обратная связь</a>
                 </li>
             </ul>
         </nav>
@@ -61,23 +71,95 @@
                 <li><a href="article4.html">Список терминов</a></li>
             </ul>
         </section>
-        <section>
+        <table>
+            <caption>Ключевые события в жизни Дэвида Хейнемейера Ханссона</caption>
+            <thead>
+                <tr>
+                    <th>Год</th>
+                    <th>Событие</th>
+                    <th>Компания / проект</th>
+                    <th>Значение</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1999</td>
+                    <td>Создал Daily Rush</td>
+                    <td>Daily Rush</td>
+                    <td>Первый крупный проект</td>
+                </tr>
+                <tr>
+                    <td>2003</td>
+                    <td>Присоединился к 37signals</td>
+                    <td>37signals</td>
+                    <td>Начало работы над Basecamp</td>
+                </tr>
+                <tr>
+                    <td>2004</td>
+                    <td>Создал Ruby on Rails</td>
+                    <td>37signals</td>
+                    <td>Главный вклад в IT</td>
+                </tr>
+                <tr>
+                    <td>2011</td>
+                    <td>Дебют в ALMS</td>
+                    <td>OAK Racing</td>
+                    <td>Начало гоночной карьеры</td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>Победа в Ле-Мане</td>
+                    <td>Aston Martin Racing</td>
+                    <td>Главная гоночная победа</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>Запуск HEY</td>
+                    <td>Basecamp</td>
+                    <td>Новый продукт</td>
+                </tr>
+            </tbody>
+        </table>
+        <section id="feedback">
             <h2>Обратная связь</h2>
-            <form action="">
-                <label for="login">Введите логин</label><br>
-                <input type="text" placeholder="Логин" name="login" id="login" required><br>
-                <label for="password">Введите пароль</label><br>
-                <input type="password" placeholder="Пароль" name="pass" id="pass" required><br>
-                <input type="checkbox" id="agreement" required checked>
-                <label for="agreement">Согласен на обратботку персональных данных</label><br>
-                <select name="city" id="city">
-                    <option value="" selected disabled>Выберите город</option>
-                    <option value="chel">Челябинск</option>
-                    <option value="mos">Москва</option>
-                    <option value="ekat">Екатеринбург</option>
-                </select><br>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <input type="submit" value="Войти">
+            <form id="contact-form" action="#" method="post">
+                <div class="form_item">
+                    <label for="topic">Тема обращения:</label><br>
+                    <select id="topic" name="topic" required>
+                        <option value="question">Вопрос по проекту</option>
+                        <option value="cooperation">Предложение о сотрудничестве</option>
+                        <option value="error">Сообщить об ошибке</option>
+                    </select>
+                </div>
+                <div class="form_item">
+                    <label for="username">Ваше имя:</label><br>
+                    <input type="text" id="username" name="username" placeholder="Введите ваше имя" required>
+                </div>
+                <div class="form_item">
+                    <label for="useremail">Ваш Email:</label><br>
+                    <input type="email" id="useremail" name="useremail" placeholder="example@mail.ru" required>
+                </div>
+                <div class="form_item">
+                    <label for="message">Сообщение:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="30" placeholder="Введите текст сообщения"
+                        required></textarea>
+                </div>
+                <div class="form_item">
+                    <label for="date">Дата:</label><br>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form_item">
+                    <label for="tel">Телефон:</label><br>
+                    <input type="tel" id="tel" name="tel" placeholder="+7 (999) 999-99-99" required>
+                </div>
+                <div class="form_item checkbox-item">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">Согласен с политикой конфиденциальности</label>
+                </div>
+
+                <div class="form_item">
+                    <input type="submit" value="Отправить">
+                </div>
             </form>
         </section>
     </main>
