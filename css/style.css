@@ -232,16 +232,16 @@ input {
     border-radius: 4px;
 }
 
-input[type=sumbit] {
+input[type=submit] {
     background-color: darkblue;
     color: white;
 }
 
-input[type=sumbit] {
+input[type=submit] {
     background-color: blue;
 }
 
-input[type=sumbit] {
+input[type=submit] {
     accent-color: red;
 }
 
